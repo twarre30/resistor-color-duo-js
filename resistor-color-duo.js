@@ -11,7 +11,7 @@ const COLORS = [
   "white",
 ];
 
-const colorCode = (color: string): number => COLORS.indexOf(color);
+const colorCode = (color) => COLORS.indexOf(color);
 
-export const decodedValue = ([tens, ones]: string[]): number =>
+export const decodedValue = ([tens, ones]) =>
   colorCode(tens) * 10 + colorCode(ones);
